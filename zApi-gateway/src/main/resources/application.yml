@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: zApi-gateway
+  cloud:
+    gateway:
+      routes:
+        - id: zApi-route
+          uri: http://localhost:8123
+          predicates:
+            - Path=/api/**
+
+dubbo:
+  registry:
+    address: nacos://localhost:8848
+
+server:
+  port: 8090

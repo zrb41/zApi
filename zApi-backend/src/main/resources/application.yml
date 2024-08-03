@@ -1,0 +1,26 @@
+spring:
+  application:
+    name: zApi-backend
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/zapi
+    username: root
+    password: 962867042zrb
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+    map-underscore-to-camel-case: false
+
+dubbo:
+  registry:
+    address: nacos://localhost:8848
+
+server:
+  port: 7529
+  servlet:
+    context-path: /api
+
+zapi:
+  access-key: dasd
+  secret-key: dsadas
